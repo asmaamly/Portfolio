@@ -18,7 +18,7 @@
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
 
     <!-- Todo: put here your site title -->
-    <title>[Your name here] | Developer</title>
+    <title>[Moulay Abdellah Asma] | Developer</title>
     <!-- Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) -->
     <meta name="keywords" content="[username], [name], skill" />
     <!-- Todo: improve your SEO by adding a small description of you -->
@@ -41,14 +41,45 @@
   <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
   <body>
     <div id="top"></div>
+    <!-- **** Navbar **** -->
+<nav class="navbar navbar-expand-md navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#top">Asma</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- /END Navbar -->
 
     <!-- **** Hero Section **** -->
     <section id="hero" class="jumbotron">
       <div class="container">
         <h1 class="hero-title load-hidden">
-          Hi, my name is <span class="text-color-main">Your Name</span>
+          Hi, my name is <span class="text-color-main">Moulay Abdellah Asma</span>
           <br />
-          I'm the Unknown Developer.
+          I'm a computer science engineer.
         </h1>
         <p class="hero-cta load-hidden">
           <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about"
@@ -65,27 +96,18 @@
         <h2 class="section-title load-hidden">About me</h2>
         <div class="row about-wrapper">
           <div class="col-md-6 col-sm-12">
-            <div class="about-wrapper__image load-hidden">
-              <img
-                alt="Profile Image"
-                class="img-fluid rounded shadow-lg"
-                height="auto"
-                width="300px"
-                src="assets/profile.jpg"
-                alt="Profile Image"
-              />
-            </div>
           </div>
           <div class="col-md-6 col-sm-12">
-            <div class="about-wrapper__info load-hidden">
-              <p class="about-wrapper__info-text">
-                This is where you can describe about yourself. The more you
-                describe about yourself, the more chances you have!
+            <div class="about-wrapper__info about-wrapper__info--centered load-hidden">
+              <p class="about-wrapper__info-text"> 
+                I'm a Computer Engineer with a Master 's degree in Artificial Intelligence. 
+                I'm looking for my first professional opportunity in AI/software engineering, 
+                where I can keep learning while turning ideas into real and working products.
               </p>
               <p class="about-wrapper__info-text">
-                Extra Information about you! like hobbies and your goals.
+                Extra Information about you! like hobbies and your  goals.
               </p>
-              <span class="d-flex mt-3">
+              <span class="d-flex mt-3 justify-content-center">
                 <a
                   rel="noreferrer"
                   target="_blank"
@@ -112,19 +134,19 @@
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 0</h3>
+                <h3 class="project-wrapper__text-title">Multilingual RAG Conversational AI Agent</h3>
                 <div>
                   <p class="mb-4">
-                    Describe the project being very specific, you can use the Twitter standard: no more than 280 characters: 
-                    complement the information: the skills learned or reinforced in its realization and how you faced it, 
-                    prove to be proactive in the search for solutions.
+                    Izzy is a multilingual conversational AI agent built as my Master's thesis project for Djezzy, 
+                    Algeria's leading telecom operator. It combines Retrieval-Augmented Generation (RAG) with a natural, 
+                    animated conversational interface to answer user queries accurately across French, Arabic and English.
                   </p>
                 </div>
                 <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--hero"
-                  href="#!"
+                  href="https://vpos-react-96hd.vercel.app/"
                 >
                   See Live
                 </a>
@@ -132,9 +154,9 @@
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn text-color-main"
-                  href="#!"
+                  href="izzy-details.html"
                 >
-                  Source Code
+                  Details
                 </a>
               </div>
             </div>
@@ -151,7 +173,7 @@
                     <img
                       alt="Project Image"
                       class="img-fluid"
-                      src="assets/project.jpg"
+                      src="assets/izzy.jpg"
                     />
                   </div>
                 </a>
@@ -164,12 +186,12 @@
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 1</h3>
+                <h3 class="project-wrapper__text-title">Excel Data Import & Visualization Platform</h3>
                 <div>
                   <p class="mb-4">
-                    Demonstrate in this description the skills of a programmer: such as having commitment, 
-                    having perseverance and accepting alternative solutions. Remember that being a portfolio you are not selling the project, 
-                    you are selling yourself, it reflects the resources used: Frameworks, libraries, platforms, etc.
+ A Laravel-based web application built for Djezzy, 
+    enabling seamless import and visualization of structured multi-sheet Excel files into 
+    a PostgreSQL database with file history tracking and secure user management.
                   </p>
                 </div>
                 <a
@@ -269,20 +291,45 @@
 
     <!-- **** Contact Section **** -->
     <section id="contact">
-      <div class="container">
-        <h2 class="section-title">Contact</h2>
-        <div class="contact-wrapper load-hidden">
-          <p class="contact-wrapper__text">[Put your call to action here]</p>
-          <a
-            rel="noreferrer"
-            target="_blank"
-            class="cta-btn cta-btn--resume"
-            href="mailto:example@email.com"
-            >Call to Action</a
-          >
-        </div>
-      </div>
-    </section>
+  <div class="container">
+    <h2 class="section-title">Contact</h2>
+    <div class="contact-wrapper load-hidden">
+      <p class="contact-wrapper__text">
+       I'm currently open to new opportunities, feel free to reach out!
+      </p>
+      <span class="d-flex mt-3 contact-links">
+
+        <a
+          rel="noreferrer"
+          target="_blank"
+          class="cta-btn cta-btn--resume"
+          href="mailto:moulayasmaa2004@gmail.com"
+        >
+          Email
+        </a>
+
+        <a
+          rel="noreferrer"
+          target="_blank"
+          class="cta-btn cta-btn--resume" 
+          href="https://www.linkedin.com/in/asma-moulay-abdellah/"
+        >
+          LinkedIn
+        </a>
+
+        <a
+          rel="noreferrer"
+          target="_blank"
+          class="cta-btn cta-btn--resume"
+          href="https://github.com/asmaamly"
+        >
+          GitHub
+        </a>
+
+      </span>
+    </div>
+  </div>
+</section>
     <!-- /END Contact Section -->
 
     <!-- **** Footer Section **** -->
@@ -302,40 +349,6 @@
             <i class="fa fa-github fa-inverse"></i>
           </a>
         </div>
-
-        <hr />
-
-        <!-- Notice: if you want to give me some credit, it will be huge for me! if not, put your data on it -->
-        <p class="footer__text">
-          © 2021 - Template developed by
-          <a rel="noreferrer" href="https://github.com/cobiwave" target="_blank"
-            >Jacobo Martínez</a
-          >
-        </p>
-
-        <!-- TO DO: remove this entire paragraph once you finish your portfolio -->
-        <p class="mt-3 pt-3">
-          <a
-            rel="noreferrer"
-            class="github-button"
-            href="https://github.com/cobiwave/simplefolio/fork"
-            data-icon="octicon-repo-forked"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Fork ntkme/github-buttons on GitHub"
-            >Fork</a
-          >
-          <a
-            rel="noreferrer" 
-            class="github-button"
-            href="https://github.com/cobiwave/simplefolio"
-            data-icon="octicon-star"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Star cobiwave/simplefolio on GitHub"
-            >Star</a
-          >
-        </p>
       </div>
     </footer>
     <!-- /END Footer Section -->
