@@ -2,24 +2,56 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
   <title>Izzy | Project Details</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
   <link rel="stylesheet" href="styles.scss" />
 </head>
 <body>
+
+  <!-- **** Navbar **** -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html#top">Asma</a>
+    </div>
+  </nav>
+  <!-- /END Navbar -->
+
   <section id="project-details">
     <div class="container">
-      <h1>Multilingual RAG Conversational AI Agent</h1>
-     <h4>Key features:</h4>
-<ul>
-  <li>RAG pipeline powered by LLaMA 3.3 70B (via Groq) with ChromaDB for vector storage and CrossEncoder reranking for improved retrieval accuracy</li>
-  <li>Multilingual support with automatic language detection and tailored prompt engineering</li>
-  <li>Voice interaction via Whisper speech-to-text and Edge TTS with lip-synced Canvas 2D avatar animation</li>
-  <li>Custom RAGAS-inspired evaluation framework to measure and improve answer quality</li>
-  <li>Full-stack architecture: evolved from a terminal-based Python prototype (FAISS) through Flask, then to a production-ready FastAPI backend with a React frontend and PostgreSQL database</li>
-</ul>
-      <!-- Détails, screenshots, tech stack, etc. -->
-      <a href="index.html" class="cta-btn">← Back to portfolio</a>
+
+      <a href="index.html" class="back-link">← Back to portfolio</a>
+
+      <h1 class="project-details__title">Multilingual RAG Conversational AI Agent</h1>
+
+      <h4 class="project-details__section-title">Key Features</h4>
+      <ul class="project-details__list">
+        <li>RAG pipeline powered by LLaMA 3.3 70B (via Groq) with ChromaDB for vector storage and CrossEncoder reranking for improved retrieval accuracy</li>
+        <li>Multilingual support with automatic language detection and tailored prompt engineering</li>
+        <li>Voice interaction via Whisper speech-to-text and Edge TTS with lip-synced Canvas 2D avatar animation</li>
+      </ul>
+
+      <h4 class="project-details__section-title">Tech Stack</h4>
+      <div class="project-details__badges">
+        <span class="skill-badge">Python</span>
+        <span class="skill-badge">FastAPI</span>
+        <span class="skill-badge">React</span>
+        <span class="skill-badge">PostgreSQL</span>
+        <span class="skill-badge">ChromaDB</span>
+        <span class="skill-badge">Groq</span>
+        <span class="skill-badge">Whisper</span>
+        <span class="skill-badge">Edge TTS</span>
+      </div>
+
+      <a href="index.html" class="cta-btn cta-btn--hero project-details__back-btn">← Back to portfolio</a>
+
     </div>
   </section>
+
 </body>
 </html>
